@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion Consultant - ALTEN</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      color: white;
+    }
+
+    .login-container img {
+      max-width: 250px;
+      margin-bottom: 30px;
+    }
+
+    .login-container h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #4dff4d;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .login-container form {
+      width: 100%;
+      max-width: 400px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      padding: 20px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+
+    .btn-primary {
+      background-color: #4dff4d;
+      border: none;
+      padding: 15px;
+      font-size: 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s, transform 0.3s;
+      width: 100%;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #1aff1a;
+      transform: scale(1.05);
+    }
+
+    .login-container .links {
+      margin-top: 20px;
+    }
+
+    .login-container .links a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .login-container .links a:hover {
+      color: #4dff4d;
+    }
+
+    footer {
+      margin-top: 30px;
+    }
+
+    footer a {
+      margin: 0 10px;
+      color: white;
+      font-size: 30px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    footer a:hover {
+      color: #4dff4d;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="images/alten-logo.png" alt="Logo ALTEN">
+    <h2>Connexion Consultant</h2>
+    <form action="consultant-login.php" method="POST">
+      <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="Adresse e-mail" required>
+      </div>
+      <div class="form-group">
+        <input type="password" name="password" class="form-control" placeholder="Mot de passe" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Connexion</button>
+    </form>
+    
+    <div class="links">
+      <a href="forgot-password.html">Mot de passe oublié ?</a>
+      <a href="signup2.html">Créer un compte</a>
+    </div>
+    
+    <footer>
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:example@alten.com"><i class="fas fa-envelope"></i></a>
+    </footer>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>

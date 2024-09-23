@@ -1,0 +1,264 @@
+/* Styles généraux */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.sidebar img {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.sidebar h2 {
+  color: #ff4d4d;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+/* Contenu principal */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+/* En-tête */
+.header {
+  background-color: #ff4d4d;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card */
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.card-header {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.table {
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.table thead {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.table thead th {
+  border-top: none;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn-primary {
+  background-color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #555;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c9302c;
+}
+
+/* Statistiques */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stats .stat {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 23%;
+  text-align: center;
+}
+
+.stats .stat h3 {
+  margin-bottom: 10px;
+  color: #ff4d4d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+.login-container img {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.login-container h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #4dff4d;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.login-container form {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.btn-primary {
+  background-color: #4dff4d;
+  border: none;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1aff1a;
+  transform: scale(1.05);
+}
+
+.login-container .links {
+  margin-top: 20px;
+}
+
+.login-container .links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.login-container .links a:hover {
+  color: #4dff4d;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+footer a {
+  margin: 0 10px;
+  color: white;
+  font-size: 30px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+footer a:hover {
+  color: #4dff4d;
+  transform: scale(1.2);
+}

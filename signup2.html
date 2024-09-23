@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    .background-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background-color: #ffffff; /* Couleur de fond blanche pour la carte */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .card-header {
+      background-color: #28a745; /* Vert pour le header */
+      color: #ffffff;
+      padding: 20px;
+    }
+    .card-header img {
+      max-width: 150px;
+    }
+    .btn-primary {
+      background-color: #28a745; /* Vert pour le bouton */
+      border-color: #28a745;
+    }
+    .btn-primary:hover {
+      background-color: #218838; /* Vert plus foncé pour le survol */
+      border-color: #1e7e34;
+    }
+    .card-footer {
+      background-color: #f8f9fa; /* Couleur de fond gris clair pour le pied de page */
+      border-top: 1px solid #e9ecef;
+      padding: 10px;
+    }
+    .card-footer a {
+      color: #28a745; /* Vert pour le lien */
+      text-decoration: none;
+    }
+    .card-footer a:hover {
+      color: #218838; /* Vert plus foncé pour le survol du lien */
+      text-decoration: underline;
+    }
+    .form-control {
+      border-color: #28a745; /* Bordure verte pour les champs de formulaire */
+    }
+    .form-control:focus {
+      box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.25); /* Ombre verte au focus */
+    }
+  </style>
+</head>
+<body>
+  <div class="background-image">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card mt-5">
+            <div class="card-header text-center">
+              <img src="images/alten-logo.png" alt="Logo ALTEN" class="img-fluid mb-3">
+              <h3>Inscription</h3>
+            </div>
+            <div class="card-body">
+              <form action="signup2.php" method="POST">
+                <div class="form-group">
+                  <label for="name">Nom</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Entrer votre nom" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Adresse Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Entrer votre email" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">Mot de passe</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Entrer votre mot de passe" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+              </form>
+            </div>
+            <div class="card-footer text-center">
+              <a href="consultant-login.html">Déjà un compte ? Se connecter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALTEN Fes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Lien vers Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .background-image {
+      position: relative;
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+      padding: 50px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-content img {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    .user-group {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .user-group a {
+      margin: 0 15px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .user-group img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .user-group img:hover {
+      transform: scale(1.1);
+    }
+
+    .user-group p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .user-group a:hover p {
+      color: #007bff;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    footer a {
+      margin: 0 10px;
+      color: white;
+      font-size: 30px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    footer a:hover {
+      color: #007bff;
+      transform: scale(1.3);
+    }
+
+    footer a.facebook { color: #3b5998; }
+    footer a.instagram { color: #e4405f; }
+    footer a.linkedin { color: #0077b5; }
+    footer a.email { color: #d44638; }
+  </style>
+</head>
+<body>
+  <div class="background-image">
+    <div class="header-content">
+      <img src="images/alten-logo.png" alt="Logo ALTEN" class="img-fluid">
+      <h1>Bienvenue sur notre Application</h1>
+      <div class="user-group">
+        <a href="admin-login.html">
+          <img src="images/admin.jpg" alt="Administrateur">
+          <p>Administrateur</p>
+        </a>
+        <a href="manager-login.html">
+          <img src="images/manager.jpg" alt="Manager">
+          <p>Manager</p>
+        </a>
+        <a href="consultant-login.html">
+          <img src="images/consultant.jpg" alt="Consultant">
+          <p>Consultant</p>
+        </a>
+      </div>
+    </div>
+    <footer>
+      <a href="https://www.facebook.com" class="facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/alten/mycompany/verification/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:example@alten.com" class="email"><i class="fas fa-envelope"></i></a>
+    </footer>
+  </div>
+
+  <!-- Script pour les icônes Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
